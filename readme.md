@@ -1,8 +1,23 @@
 # Módulo 10 SEO - Sergio Suárez
 
-
-## https - Se activan un certificado
+## https - Se activa un certificado
 El protocolo seguro ayuda a que se indexe mejor la pagina en google.
+
+## Cambios en el codigo HTML
+
+Cambios realizados en el codigo HRML
+
+- Se optimiza el Title, por debajo de de 65 palabras.
+- Se mejoran todos los H1, H2, H3, H4, H5 (Solo un H1 por página, y el resto debajo)
+- Se añade figure y figcaption en las imágenes y se les pone un alt.
+- Se mejoran todas las negritas
+- Se cambian los section por article.
+- Añadidos atributos title en los anchor con información sobre link.
+- Se quitan divs, segun lo comentado por el  profesor, que no haya demasiados.
+- Se unifica la barra de menú en uno solo, no usar 2 distintos. Y se añaden titulos. 
+- Sobre los metakeywords: Google no las tiene en cuenta desde 2009, no se ponen.
+- Se carga el javascript al final, para no ralentizar o permitir que no se cargue contenido si falla.
+
 
 ## Robots.txt
 Se añade un robots.txt  que proporciona información a los rastreadores de busqueda.
@@ -12,7 +27,7 @@ Se añade un robots.txt  que proporciona información a los rastreadores de busq
 Permite optimizar el SEO de un sitio web ya que informa a Google y otros motores de búsqueda sobre la organización y la jerarquía del contenido y permite que los buscadores rastreen el sitio de forma más inteligente.
 
 ## Se añaden Metas Fundamentales de OpenGraph
-<!-- Open Graph data -->
+
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article:
 http://ogp.me/ns/article#">
 <meta property="og:title" content="Your Title Here" />
@@ -24,29 +39,12 @@ http://ogp.me/ns/article#">
 <meta property="fb:app_id" content="Your FB_APP_ID" />
 
 
-## Cambios en la estructura
-
-En cuanto a la estructura del HTML, los cambios realizados fueron los siguientes:
-
-- Se cambian los secgtion por article.
-- Se quitan divs, segun lo comentado por el  profesor, que no haya demasiados.
-- Se unifica la barra de busqueda en una sola, no usar 2 distintas.
-
-
 ## Microdatos
 
-- En el `<section id="quien-soy">` se usó el esquema `Person` y los atributos `image, description, name`
+Se añaden microdatos en las secciones "quien", "estudios", "experiencia", "sobre" y "footer.
+Todos ellos sacados de http://schema.org
 
-- En el `<section id="estudios">` se usó el esquema `School` y los atributos `logo, description, name, url` para englobar a la escuela de programación Keepcoding. Y se usó el esquema `CollegeOrUniversity` y los atributos y los atributos `logo, description, name, url` para englobar la Universidad Politécnica de Madrid
 
-- En el `<section id="experiencia">` se usó el esquema `Organization` y los atributos `name, url, logo` para englobar a la compañía y dentro se usó el esquema `OrganizationRole` y los atributos `roleName, description` para englobar el rol dentro de la compañía
+## Google Search Console
 
-- En el `<section id="sobre-mi">` se usó el esquema `MediaObject` y el atributo `contentUrl` para englobar al video
-
-- En el `footer` se usó el esquema `CreativeWork` y el atributo `copyrightHolder` para englobar el copyright de la página web
-
-#### GOOGLE WEBMASTER TOOLS
-
-Verficamos la propiedad del sitio web
-
-Y comprobamos que indexamos todo lo que enviamos tenemos la herramienta GOOGLE WEBMASTER TOOL
+Verficamos la propiedad del sitio web y comprobamos que indexamos todo lo que enviamos 
