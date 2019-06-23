@@ -22,7 +22,7 @@ Cambios realizados en el codigo HRML
 ## Robots.txt
 Se añade un robots.txt  que proporciona información a los rastreadores de busqueda.
 
-## SITEMAP
+## Sitemap
 
 Permite optimizar el SEO de un sitio web ya que informa a Google y otros motores de búsqueda sobre la organización y la jerarquía del contenido y permite que los buscadores rastreen el sitio de forma más inteligente.
 
@@ -30,13 +30,13 @@ Permite optimizar el SEO de un sitio web ya que informa a Google y otros motores
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article:
 http://ogp.me/ns/article#">
-<meta property="og:title" content="Your Title Here" />
+<meta property="og:title" content="Sergio Suarez CV" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/" />
-<meta property="og:image" content="https://example.com/image.jpg" /> 
-<meta property="og:description" content="Your Description Here" /> 
-<meta property="og:site_name" content="Your Site Name, i.e. Moz" /> 
-<meta property="fb:app_id" content="Your FB_APP_ID" />
+<meta property="og:url" content="https://sergiosuarezdev.com" />
+<meta property="og:image" content="https://sergiosuarezdev.com/assets/img/sergio.jpg" /> 
+<meta property="og:description" content="CV De Sergio Suarez" /> 
+<meta property="og:site_name" content="Sitio Web de Sergio Suarez" /> 
+<meta property="fb:app_id" content="XXXXXXXX" />
 
 
 ## Microdatos
@@ -47,4 +47,8 @@ Todos ellos sacados de http://schema.org
 
 ## Google Search Console
 
-Verficamos la propiedad del sitio web y comprobamos que indexamos todo lo que enviamos 
+Verificamos la propiedad del sitio web y comprobamos que indexamos todo lo que enviamos 
+
+## Mas Mejoras - CDN
+
+Seria muy buena idea tambien añadir todos los ficheros de video e imágenes a un CDN para mejorar la carga dependiendo de la situaxción geográfica del usuario.
