@@ -10,43 +10,13 @@ function app() {
     let menu = document.querySelector('.menu');
     let menuMobile = document.querySelector('.menuMobile');
     let menutop = menu.offsetTop;
-    let iconoMobile = document.getElementById('iconMenu');
-    let iconoMobile = document.getElementById('iconMenu');
+
 
     //Select para la opcion de "otros" en el select del formulario
     let select = document.querySelector('select[name="selector"]');
 
     //Event para fijar el menu arriba y el ancho (menu)
     window.addEventListener('scroll', fixMenu);
-
-    //Click en el icono del menu Mobile
-    iconoMobile.onclick = function() {
-
-      if (menu.classList.contains('MenuMobile')) {
-        // Si estamos en el menu mobile
-        // De esta manera enciendo/apago el menu  
-        if (menu.classList.contains('encendido')) { 
-            menu.classList.add('apagado');
-            menu.classList.remove('encendido');
-
-        } else  { 
-            menu.classList.remove('apagado');
-            menu.classList.add('encendido');
-        }
-
-      } else {
-         // Si no tiene el menu mobile
-        menu.classList.add('MenuMobile');
-        menu.style.display = 'initial';
-        menu.classList.remove('fixed');
-        menu.classList.add('encendido');
-
-        const listItemsMenu = document.querySelectorAll('.menu li');
-        for (let i = 0; i < listItemsMenu.length; i++) {
-            listItemsMenu[i].style.display = 'block';
-        }
-      }
-    };
 
 
     //Cuando cambie el menu si esta seleccionado el "otro" creamos un input nuevo
@@ -61,7 +31,6 @@ function app() {
         }
         
     });
-
 
     //Cuando se envie el formulario, hago todas las validaciones
     //Ya se que se peuden hacer con el pattern, pero por si acaso

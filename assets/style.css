@@ -118,6 +118,20 @@ body header .menu li {
     display:none !important ;
   }
 
+  .photo {
+    text-align: center;
+  }
+
+  .photo img {
+    width: 200px;
+  }
+
+  .photo figcaption {
+    margin-bottom:40px;
+}
+
+
+
  body header .menu a {
     padding: 0.2em 0;
     color: var(--color-texto)
@@ -183,7 +197,7 @@ section h2 {
     color: white;
 }
 
-.portada-header p {
+.portada-header h3 {
     padding-top: 2rem;
     color: white;
     text-align: center;

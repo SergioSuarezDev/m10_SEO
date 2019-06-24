@@ -26,18 +26,17 @@
 <body itemscope itemtype="https://schema.org/Person">
 	<header>
         <section class="banner">
-            <h1>SERGIO SUÁREZ</h1>
-            <h2>Web Developer</h2> 
-            <div class="social">          
-               <a href="mailto:info@sergiosuarezdev.com" ><i class="fas fa-envelope"></i></a>
-               <a href="https://www.linkedin.com/in/sergio-suarez" target="_blank"><i class="fab fa-linkedin"></i></a>
-               <a href="https://twitter.com/SergioSuarezDEV" target="_blank"><i class="fab fa-twitter"></i></a>
-               <a href="https://github.com/SergioSuarezDev" target="_blank"><i class="fab fa-github"></i></a>
+            <h1 itemprop="name">SERGIO SUÁREZ</h1>
+            <h2 class="subtitle" itemprop="hasOccupation" itemscope itemtype="https://schema.org/Role">
+                <span itemprop="name">Web Developer</span><meta itemprop="startDate" content="2019">
+            </h2>
+            <div class="social" itemscope itemtype="https://schema.org/Person">                      
+               <a itemprop="follows" href="mailto:info@sergiosuarezdev.com" ><i class="fas fa-envelope"></i></a>
+               <a itemprop="follows" href="https://www.linkedin.com/in/sergio-suarez" target="_blank"><i class="fab fa-linkedin"></i></a>
+               <a itemprop="follows" href="https://twitter.com/SergioSuarezDEV" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a itemprop="follows" href="https://github.com/SergioSuarezDev" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </section>
-        <nav class="mobile">
-                <i id="iconMenu" class="fas fa-bars"></i>
-        </nav>
 		<nav class="menu">
 			<ul>
                 <li><a href=#>Portada</a></li>
@@ -48,31 +47,30 @@
                 <li><a href=#contacto>Contacto</a></li>
             </ul>
 		</nav>
-	</header>
+    </header>
+    
 	<main>
         <section id="portada">
             <article>
                 <header class="portada-header">
                     <h2>Portada</h2>
-                    <p>Bienvenido a mi página web</p>
+                    <h3>Bienvenido a mi página web</h3>
                 </header>
             </article>
         </section>
 
         <section id="quien">
-            <article>
+            <article class="content-wrapper" itemscope itemtype="http://schema.org/Person">
                 <header>
                     <h2>Quien Soy</h2>
                     <span class="volver"><a href=#>Volver</a></span>
                 </header>
-                <div class="wrapperText">
-                    <figure><img class="photo" src="assets/img/sergio.jpg" 
-                        alt="Sergio" itemprop="image">
-                    <figcaption>Sergio Suarez</figcaption>
+                    <figure class="photo">
+                        <img src="assets/img/sergio.jpg" alt="Sergio" itemprop="image">
+                        <figcaption>Sergio Suarez</figcaption>
                     </figure>
-                    <p>Mi nombre es Sergio Suárez, tengo 34 años, soy de Santiago de Compostela pero 
+                    <p itemprop="description">Mi nombre es Sergio Suárez, tengo 34 años, soy de Santiago de Compostela pero 
                         actualmente vivo en Valladolid. Trabajo actualmente como programador.</p>
-                </div>
             </article>
         </section>   
 
@@ -84,21 +82,26 @@
                     <p>Estos son mis estudios:</p>
                 </header>
 
-                <ul class="estudios">
+                <ul itemprop="alumniOf" itemscope itemtype="https://schema.org/School" 
+                class="estudios">
                     <li>
-                        <span class="title">2018/2019</span> - <strong>Keepcoding</strong> (Madrid)<br/>
+                        <span temprop="startDate" class="title">2018</span>-<span class="title" itemprop="endDate">2019</span>
+                         - <span itemprop="name"><strong>Keepcoding</strong> </span>(Madrid)<br/>
                         Master Full Stack Web Development
                     </li>
                     <li>
-                        <span class="title">2016/2018</span> - <strong>Instituto FOC</strong> (Granada)<br/>
+                        <span temprop="startDate" class="title">2016</span>-<span class="title" itemprop="endDate">2018</span>
+                        - <span itemprop="name"><strong>Instituto FOC</strong></span> (Granada)<br/>
                         Desarrollo de aplicaciones web
                     </li>                    
                     <li>
-                        <span class="title"> 2008/2010</span> - <strong>IES San Clemente</strong> (Santiago de Compostela)<br/>
+                        <span temprop="startDate" class="title">2008</span>-<span class="title" itemprop="endDate">2010</span>
+                        - <span itemprop="name"><strong>IES San Clemente</strong> </span>(Santiago de Compostela)<br/>
                         Administración de Sistemas
                     </li>
                     <li>                              
-                        <span class="title">2006/2008</span> - <strong>CES, Escuela Superior Imagen y Sonido</strong> (Madrid)<br/>
+                        <span temprop="startDate" class="title">2006</span>-<span class="title" itemprop="endDate">2008</span>
+                        - <span itemprop="name"><strong>CES, Escuela Superior Imagen y Sonido</span></strong> (Madrid)<br/>
                         Técnico superior en Sonido
                     </li>
                 </ul>
@@ -106,7 +109,7 @@
             </article>
         </section>
 
-        <section id="experiencia">   
+        <section id="experiencia" itemscope itemtype="https://schema.org/Organization">   
             <article>
                 <header>
                     <h2>Experiencia</h2>
@@ -115,28 +118,31 @@
 
                 </header>
 
-
-                <ul class="experiencia">
+                <ul class="experiencia" itemprop="worksFor" i
+                temscope itemtype="https://schema.org/Organization https://schema.org/OrganizationRole">
                         <li>
-                            <span class="title">2016/2018</span> - <strong>CIS21</strong> (Valladolid)<br/>
+                            <span itemprop="startDate" class="title">2016</span> - <span itemprop="endDate" class="title">Actualidad</span>
+                            - <strong>CIS21</strong> (Valladolid)<br/>
                         </li>
                         <li>
-                            <span class="title">2015/2016</span> - <strong>Hermanas Hospitalarias</strong> (Valladolid)<br/>
+                            <span itemprop="startDate" class="title">2015</span> - <span itemprop="endDate" class="title">2016</span>
+                            - <span itemprop="name"><strong>Hermanas Hospitalarias</strong> </span>(Valladolid)<br/>
                         </li>                    
                         <li>
-                            <span class="title">2013/2015</span> - <strong>Freelance</strong> (Valladolid)<br/>
+                        <span itemprop="startDate" class="title">2013</span> - <span itemprop="endDate" class="title">2015</span>
+                            - <span itemprop="name"><strong>Freelance</strong></span> (Valladolid)<br/>
                         </li>
                         <li>
-                            <span class="title">2013/2014</span>- <strong>1&1 Spain</strong> (Lugo)<br/>
+                            <span itemprop="startDate" class="title">2013</span> - <span itemprop="endDate" class="title">2014</span>
+                            - <span itemprop="name"><strong>1&1 Spain</strong></span> (Lugo)<br/>
                         </li>
                         <li>                              
-                            <span class="title">2010/2012</span> - <strong>INISOFT</strong> (Madrid)<br/>
+                            <span itemprop="startDate" class="title">2010</span> - <span itemprop="endDate" class="title">2012</span>
+                             - <span itemprop="name"><strong>INISOFT</strong> </span>(Madrid)<br/>
                         </li>
                         <li>                              
-                            <span class="title">2003/2008</span> - <strong>Grupo Iramais</strong> (Santiago de Compostela)<br/>
-                        </li> 
-                        <li>                              
-                            <span class="title">2001/2003</span>- <strong>Pontemar SC</strong> (Santiago de Compostela)<br/>
+                            <span itemprop="startDate" class="title">2001</span> - <span itemprop="endDate" class="title">2008</span>
+                            - <span itemprop="name"><strong>Grupo Iramais</strong></span> (Santiago de Compostela)<br/>
                         </li>                        
                     </ul>
 
@@ -152,10 +158,14 @@
                 <div class="wrapperText">
                         <p>Me gusta la música electrónica, ver series y cine además soy un gran amante de 
                             los animales, especialmente los perros y gatos. He tenido durante 13 años una gata persa 
-                            y actualmente tengo 2 Bulldog Franceses, se llaman Lucas y Fiona.</p>                    
+                            y actualmente tengo 2 Bulldog Franceses, se llaman Lucas y Fiona.</p>    
+                            <p>Soy programador y técnico de sistemas desde hace casi 15 años, me considero un entusista de las nuevas
+                                tecnologías y soy muy constante y tenaz en mis proyectos. Me gusta programar en Nodejs, JS, React, 
+                                <abbr title="Visual Basic for Applications">PHP</abbr>, MySQL, etc.
+                            </p>                
                     </div>  
 
-                    <video width="320" height="240" controls>
+                    <video itemscope itemtype="https://schema.org/MediaObject" width="320" height="240" controls>
                          <source src="assets/video/frenchie.mp4" type="video/mp4"> 
                     </video>
             </article>
@@ -202,11 +212,10 @@
         </section>	
     </main>		
 
-    <footer>
-        <aside class="redessociales">            
-            <p>Copyright 2019 -  Sergio Suárez Gil</p>        
-        </aside>
+    <footer itemscope itemtype="https://schema.org/CreativeWork">
+            <p itemprop="copyrightHolder">Copyright 2019 -  Sergio Suárez Gil</p>        
         </footer>
 </body>
 <script src="assets/scripts.js" type="module"></script>
 </html>
+
