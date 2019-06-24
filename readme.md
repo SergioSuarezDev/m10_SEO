@@ -43,9 +43,15 @@ Todos ellos sacados de `http://schema.org`
 
 ## Google Search Console
 
-Verificamos la propiedad del sitio web y comprobamos que indexamos todo lo que enviamos 
-
+- Verificamos la propiedad del sitio web y comprobamos que indexamos nuestra web.
+- Si la página tuviese mas links tambien podriamos enviar el sitemap.xml para ayudar a las herramientas de búsqueda a entender la estructura del sitio e indexar mejor el contenido.
+- Podemos eliminar spammers o enlaces que estén perjudicando (black hat SEO)
+- Comprobar cómo de adaptada está tu página a los móviles (mobile first)
 
 ## Mas Mejoras - CDN
 
 Seria muy buena idea tambien añadir todos los ficheros de video e imágenes a un `CDN` para mejorar la carga dependiendo de la situaxción geográfica del usuario.
+
+## Mas Mejoras - Google AMP
+
+Google destaca las Páginas Móviles Aceleradas (Accelerated Mobile Pages) 
