@@ -6,11 +6,11 @@ El protocolo seguro ayuda a que se indexe mejor la pagina en google.
 
 ## Cambios realizados en el código HTML
 
-- Se optimiza el Title, por debajo de de 65 palabras.
-- Se mejoran todos los H1, H2, H3, H4, H5 (Solo un H1 por página, y el resto debajo)
+- Se optimiza el Title de la página.
+- Se mejoran todos los H1, H2, H3 (Solo un H1 por página, y el resto debajo)
 - Se añade figure y figcaption en las imágenes y se les pone un alt.
-- Se mejoran todas las negritas
-- Se cambian los section por article.
+- Se mejoran todos los textos en negrita.
+- Se cambian algunos section y se añade dentro un article.
 - Añadidos atributos title en los anchor con información sobre link.
 - Se quitan divs, segun lo comentado por el  profesor, que no haya demasiados.
 - Se unifica la barra de menú en uno solo, no usar 2 distintos. Y se añaden titulos. 
@@ -21,8 +21,9 @@ El protocolo seguro ayuda a que se indexe mejor la pagina en google.
 ## Robots.txt
 Se añade un robots.txt  que proporciona información a los rastreadores de busqueda.
 
-## Sitemap
-Permite optimizar el SEO de un sitio web ya que informa a Google y otros motores de búsqueda sobre la organización y la jerarquía del contenido y permite que los buscadores rastreen el sitio de forma más inteligente.
+## Se añade link rel=canonical
+Esto mejorará el proceso de indexación y posicionamiento de la web.
+
 
 ## Se añaden Metas Fundamentales de OpenGraph
 `<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article:http://ogp.me/ns/article#">`
@@ -36,7 +37,7 @@ Permite optimizar el SEO de un sitio web ya que informa a Google y otros motores
 
 ## Microdatos
 
-Se añaden microdatos en las secciones "quien", "estudios", "experiencia", "sobre" y "footer.
+Se añaden microdatos en las secciones "social", "quien", "estudios", "experiencia", "sobre" y "footer.
 Todos ellos sacados de `http://schema.org`
 
 

@@ -7,7 +7,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Sergio Suarez Gil">
-        <meta name="description" content="Este es el curriculum de Sergio Suárez Gil, Desarrollador Web Full Stack - KeepCoding, bienvenido y espero que te guste su contenido.">
+        <meta name="description" content="Este es el curriculum de Sergio Suárez Gil, Desarrollador Web Full Stack 
+        - KeepCoding, bienvenido y espero que te guste su contenido.">
         
         <meta property="og:title" content="Sergio Suarez CV" />
         <meta property="og:type" content="article" />
@@ -21,9 +22,12 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+        <link rel="canonical" href="https://sergiosuarezdev.com"/>
+
     </head>
 
-<body itemscope itemtype="https://schema.org/Person">
+<body >
+    <div itemscope itemtype="https://schema.org/Person">
 	<header>
         <section class="banner">
             <h1 itemprop="name">SERGIO SUÁREZ</h1>
@@ -48,19 +52,17 @@
             </ul>
 		</nav>
     </header>
-    
+    </div>
 	<main>
         <section id="portada">
-            <article>
                 <header class="portada-header">
                     <h2>Portada</h2>
                     <h3>Bienvenido a mi página web</h3>
                 </header>
-            </article>
         </section>
 
         <section id="quien">
-            <article class="content-wrapper" itemscope itemtype="http://schema.org/Person">
+            <article class="content-wrapper">
                 <header>
                     <h2>Quien Soy</h2>
                     <span class="volver"><a href=#>Volver</a></span>
@@ -69,8 +71,13 @@
                         <img src="assets/img/sergio.jpg" alt="Sergio" itemprop="image">
                         <figcaption>Sergio Suarez</figcaption>
                     </figure>
-                    <p itemprop="description">Mi nombre es Sergio Suárez, tengo 34 años, soy de Santiago de Compostela pero 
-                        actualmente vivo en Valladolid. Trabajo actualmente como programador.</p>
+                    <div itemscope itemtype="http://schema.org/Person">
+                        <p itemprop="description">Mi nombre es <span itemprop="givenName">Sergio Suarez</span>, 
+                            tengo 34 años, soy de Santiago de Compostela pero 
+                            actualmente vivo en Valladolid. 
+                            Trabajo actualmente como <span itemprop="jobTitle">desarrollador</span>.
+                        </p>
+                    </div>
             </article>
         </section>   
 
@@ -159,15 +166,20 @@
                         <p>Me gusta la música electrónica, ver series y cine además soy un gran amante de 
                             los animales, especialmente los perros y gatos. He tenido durante 13 años una gata persa 
                             y actualmente tengo 2 Bulldog Franceses, se llaman Lucas y Fiona.</p>    
+                        <br/>
                             <p>Soy programador y técnico de sistemas desde hace casi 15 años, me considero un entusista de las nuevas
-                                tecnologías y soy muy constante y tenaz en mis proyectos. Me gusta programar en Nodejs, JS, React, 
-                                <abbr title="Visual Basic for Applications">PHP</abbr>, MySQL, etc.
+                                tecnologías y soy muy constante y tenaz en mis proyectos. Me gusta programar en <span itemprop="knowsAbout">Nodejs</span>, 
+                                <span itemprop="knowsAbout">Javascript</span>, <span itemprop="knowsAbout">React</span>, 
+                                <abbr title="Visual Basic for Applications"><span itemprop="knowsAbout">PHP</span></abbr>, 
+                                <span itemprop="knowsAbout">MySQL</span>, <span itemprop="knowsAbout">CSS</span>, etc.
                             </p>                
                     </div>  
-
-                    <video itemscope itemtype="https://schema.org/MediaObject" width="320" height="240" controls>
+                    <div itemscope itemtype="https://schema.org/MediaObject">
+                         <video  width="320" height="240" controls>
                          <source src="assets/video/frenchie.mp4" type="video/mp4"> 
                     </video>
+                    </div>
+                   
             </article>
         </section>   
         
